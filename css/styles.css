@@ -1,3 +1,4 @@
+/* CUSTOM PROPS */
 :root{
   --grey: #9597A5;
   --black: #2D314D;
@@ -76,7 +77,6 @@ select:-webkit-autofill:focus {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
-  /* border: 3px solid red; */
 }
 
 /* BUTTON */
@@ -98,6 +98,9 @@ select:-webkit-autofill:focus {
 }
 
 /* LOGO */
+.logo {
+  display: inline-block;
+}
 .logo:hover{
   opacity: 0.8;
 }
@@ -155,8 +158,26 @@ select:-webkit-autofill:focus {
 .sitenav__link:active{
   opacity: 0.4;
 }
-
-
+/* SOCIALS */
+.socials {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.socials__item:not(:last-child) {
+  margin-right: 13px;
+}
+.socials__link {
+  text-decoration: none;
+  color: #fff;
+}
+.socials__link:hover {
+  color: var(--green);
+}
+.socials__link:active {
+  opacity: 0.6;
+}
 /* * ARTICLE CARD * */
 .article-cards-grid {
   display: flex;
@@ -372,7 +393,7 @@ select:-webkit-autofill:focus {
 
 /* * INDEX ARTICLES * */
 .index-articles {
-  padding-top: 80px;
+  padding-top: 85px;
   padding-bottom: 80px;
 }
 .index-articles__title {
@@ -384,4 +405,77 @@ select:-webkit-autofill:focus {
   color: var(--black);
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+/* SITE-FOOTER */
+.site-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--black);
+}
+.site-footer__container {
+  display: flex;
+}
+.site-footer__logo-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 160px;
+  width: 100%;
+  margin-right: 130px;
+}
+.site-footer__logo {
+  margin-bottom: 24px;
+}
+
+/* FOOTER LIST */
+.site-footer__list-wrapper {
+  display: flex;
+  margin-right: auto;
+}
+.footer-list {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+.footer-list:not(:last-child) {
+  margin-right: 30px;
+}
+.footer-list__item {
+  list-style: none;
+}
+.footer-list__item:not(:last-child){
+  margin-bottom: 8px;
+}
+.footer-list__link {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.23px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+}
+.footer-list__link:hover {
+  color: var(--green);
+}
+.footer-list__link:active {
+  opacity: 0.6;
+}
+.site-footer__cta-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+}
+.site-footer__cta-button {
+  margin-bottom: 24px;
+}
+.site-footer__copy {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.235px;
+  color: rgb(255, 255, 255, 0.5);
+  margin: 0;
 }
